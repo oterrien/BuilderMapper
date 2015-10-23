@@ -1,6 +1,6 @@
 package com.ote.util.builder.mapper.trade;
 
-import com.ote.util.builder.IMapperContext;
+import com.ote.util.builder.IMapper;
 import com.ote.util.builder.Mapper;
 import com.ote.util.builder.mapper.IEventMapper;
 import com.ote.util.input.Trade;
@@ -26,7 +26,10 @@ public class TradeEventMapper extends Mapper<TradeEventMapper.Context> implement
         return "Trade";
     }
 
-    public static class Context implements IMapperContext{
+    /**
+     * Context for TradeEventMapper
+     */
+    public static class Context implements IMapper.Context{
 
         private Trade trade;
 

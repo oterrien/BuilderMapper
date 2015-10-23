@@ -27,10 +27,10 @@ public class Main {
         trade.setCurrency("EUR");
         trade.setUnderlying("CAC40");
 
+        MessageBuilder messageBuilder = new MessageBuilder(new TradeMessageMapper());
+
         TradeMessageMapper.Context context = new TradeMessageMapper.Context();
         context.setTrade(trade);
-
-        MessageBuilder messageBuilder = new MessageBuilder(new TradeMessageMapper());
         Message message = messageBuilder.build(context);
 
         System.out.println(message.getId());
@@ -45,10 +45,10 @@ public class Main {
         payment.setAmount(100);
         payment.setCurrency("EUR");
 
+        MessageBuilder messageBuilder = new MessageBuilder(new PaymentMessageMapper());
+
         PaymentMessageMapper.Context context = new PaymentMessageMapper.Context();
         context.setPayment(payment);
-
-        MessageBuilder messageBuilder = new MessageBuilder(new PaymentMessageMapper());
         Message message = messageBuilder.build(context);
 
         System.out.println(message.getId());
@@ -60,9 +60,8 @@ public class Main {
         payment.setAmount(-200);
         payment.setCurrency("EUR");
 
-        context = new PaymentMessageMapper.Context();
+        // Reuse Builder with updated context
         context.setPayment(payment);
-
         message = messageBuilder.build(context);
 
         System.out.println(message.getId());

@@ -3,8 +3,7 @@ package com.ote.util.builder;
 /**
  * Created by Olivier on 23/10/2015.
  */
-public abstract class Builder<TO, TM extends IMapper> implements
-        IBuilder<TO, TM> {
+public abstract class Builder<TO, TM extends IMapper> implements IBuilder<TO, TM> {
 
     private TM mapper;
 
@@ -16,20 +15,17 @@ public abstract class Builder<TO, TM extends IMapper> implements
         return mapper;
     }
 
-    public final TO build(IMapperContext context) {
+    public final TO build(IMapper.Context context) {
 
         TO obj = create();
         populate(obj, context);
         return obj;
     }
 
-    public final void populate(TO obj, IMapperContext context) {
-        try {
-            mapper.setMapperContext(context);
-            populate(obj, mapper);
-        } finally {
-            mapper.close();
-        }
+    public final void populate(TO obj, IMapper.Context context) {
+
+        mapper.setMapperContext(context);
+        populate(obj, mapper);
     }
 
     protected abstract TO create();

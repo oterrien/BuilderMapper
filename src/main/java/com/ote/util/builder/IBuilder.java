@@ -5,9 +5,9 @@ package com.ote.util.builder;
  */
 public interface IBuilder<TO, TM extends IMapper> {
 
-    TO build(IMapperContext context);
+    TO build(IMapper.Context context);
 
-    void populate(TO obj, IMapperContext context);
+    void populate(TO obj, IMapper.Context context);
 
     TM getMapper();
 }

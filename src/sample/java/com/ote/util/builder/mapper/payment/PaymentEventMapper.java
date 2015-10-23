@@ -1,6 +1,6 @@
 package com.ote.util.builder.mapper.payment;
 
-import com.ote.util.builder.IMapperContext;
+import com.ote.util.builder.IMapper;
 import com.ote.util.builder.Mapper;
 import com.ote.util.builder.mapper.IEventMapper;
 import com.ote.util.input.Payment;
@@ -26,7 +26,10 @@ public class PaymentEventMapper extends Mapper<PaymentEventMapper.Context> imple
         return "Payment";
     }
 
-    public static class Context implements IMapperContext {
+    /**
+     * Context for PaymentEventMapper
+     */
+    public static class Context implements IMapper.Context{
 
         private Payment payment;
 
