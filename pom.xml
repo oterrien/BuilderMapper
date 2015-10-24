@@ -5,7 +5,7 @@
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.ote.api</groupId>
-    <artifactId>BuilderMapper</artifactId>
+    <artifactId>buildermapper.ote</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <name>Framework and samples classes to translate a complex structure to another</name>

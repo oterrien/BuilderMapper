@@ -1,7 +1,7 @@
 package com.ote.util.builder.mapper.trade;
 
-import com.ote.util.builder.IMapper;
-import com.ote.util.builder.Mapper;
+import com.ote.builder.util.IMapper;
+import com.ote.builder.util.Mapper;
 import com.ote.util.builder.mapper.IEventMapper;
 import com.ote.util.input.Trade;
 

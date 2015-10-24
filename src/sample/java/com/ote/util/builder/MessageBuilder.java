@@ -2,6 +2,7 @@ package com.ote.util.builder;
 
 import com.ote.util.builder.mapper.IMessageMapper;
 import com.ote.util.output.Message;
+import com.ote.builder.util.Builder;
 
 /**
  * Created by Olivier on 23/10/2015.

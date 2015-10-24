@@ -1,6 +1,6 @@
 package com.ote.util.builder.mapper;
 
-import com.ote.util.builder.IMapper;
+import com.ote.builder.util.IMapper;
 
 /**
  * Created by Olivier on 23/10/2015.

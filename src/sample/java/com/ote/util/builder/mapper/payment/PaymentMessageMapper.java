@@ -1,8 +1,8 @@
 package com.ote.util.builder.mapper.payment;
 
 import com.ote.util.builder.EventBuilder;
-import com.ote.util.builder.IMapper;
-import com.ote.util.builder.Mapper;
+import com.ote.builder.util.IMapper;
+import com.ote.builder.util.Mapper;
 import com.ote.util.builder.mapper.IMessageMapper;
 import com.ote.util.input.Payment;
 import com.ote.util.output.Event;

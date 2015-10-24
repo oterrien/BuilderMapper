@@ -1,6 +1,6 @@
 package com.ote.util.builder.mapper;
 
-import com.ote.util.builder.IMapper;
+import com.ote.builder.util.IMapper;
 import com.ote.util.output.Event;
 
 /**
