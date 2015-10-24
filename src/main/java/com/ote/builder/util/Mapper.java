@@ -3,15 +3,17 @@ package com.ote.builder.util;
 /**
  * Created by Olivier on 23/10/2015.
  */
-public abstract class Mapper<TC extends IMapper.Context> implements IMapper {
+public class Mapper<TC extends IMapper.Context> implements IMapper {
 
-    private TC mapperContext;
+    private TC context;
 
-    public final TC getMapperContext() {
-        return this.mapperContext;
+    @Override
+    public final TC getContext() {
+        return this.context;
     }
 
-    public final void setMapperContext(IMapper.Context context) {
-        this.mapperContext = (TC) context;
+    @Override
+    public final void setContext(IMapper.Context context) {
+        this.context = (TC) context;
     }
 }

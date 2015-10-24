@@ -17,9 +17,9 @@ public class TradeEventMapper extends Mapper<TradeEventMapper.Context> implement
     public String getContent() {
 
         return MessageFormat.format(ContentTemplate,
-                getMapperContext().getTrade().getCounterpart(),
-                getMapperContext().getTrade().getAmount(),
-                getMapperContext().getTrade().getCurrency());
+                getContext().getTrade().getCounterpart(),
+                getContext().getTrade().getAmount(),
+                getContext().getTrade().getCurrency());
     }
 
     public String getType() {

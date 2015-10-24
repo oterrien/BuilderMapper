@@ -5,9 +5,9 @@ package com.ote.builder.util;
  */
 public interface IMapper {
 
-    IMapper.Context getMapperContext();
+    IMapper.Context getContext();
 
-    void setMapperContext(IMapper.Context context);
+    void setContext(IMapper.Context context);
 
     interface Context{}
 }

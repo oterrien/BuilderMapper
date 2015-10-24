@@ -17,9 +17,9 @@ public class PaymentEventMapper extends Mapper<PaymentEventMapper.Context> imple
     public String getContent() {
 
         return MessageFormat.format(ContentTemplate,
-                getMapperContext().getPayment().getAmount() > 0 ? "Paying" : "Receiving",
-                Math.abs(getMapperContext().getPayment().getAmount()),
-                getMapperContext().getPayment().getCurrency());
+                getContext().getPayment().getAmount() > 0 ? "Paying" : "Receiving",
+                Math.abs(getContext().getPayment().getAmount()),
+                getContext().getPayment().getCurrency());
     }
 
     public String getType() {
