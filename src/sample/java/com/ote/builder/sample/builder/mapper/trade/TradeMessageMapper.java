@@ -1,11 +1,11 @@
-package com.ote.util.builder.mapper.trade;
+package com.ote.builder.sample.builder.mapper.trade;
 
-import com.ote.util.builder.EventBuilder;
+import com.ote.builder.sample.builder.EventBuilder;
+import com.ote.builder.sample.builder.mapper.IMessageMapper;
+import com.ote.builder.sample.input.Trade;
+import com.ote.builder.sample.output.Event;
 import com.ote.builder.util.IMapper;
 import com.ote.builder.util.Mapper;
-import com.ote.util.builder.mapper.IMessageMapper;
-import com.ote.util.input.Trade;
-import com.ote.util.output.Event;
 
 /**
  * Created by Olivier on 23/10/2015.

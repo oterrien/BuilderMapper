@@ -1,4 +1,4 @@
-package com.ote.util.builder.mapper;
+package com.ote.builder.sample.builder.mapper;
 
 import com.ote.builder.util.IMapper;
 

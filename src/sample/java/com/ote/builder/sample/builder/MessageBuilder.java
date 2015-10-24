@@ -1,8 +1,8 @@
-package com.ote.util.builder;
+package com.ote.builder.sample.builder;
 
-import com.ote.util.builder.mapper.IMessageMapper;
-import com.ote.util.output.Message;
 import com.ote.builder.util.Builder;
+import com.ote.builder.sample.builder.mapper.IMessageMapper;
+import com.ote.builder.sample.output.Message;
 
 /**
  * Created by Olivier on 23/10/2015.

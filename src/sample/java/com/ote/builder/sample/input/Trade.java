@@ -1,17 +1,19 @@
-package com.ote.util.input;
+package com.ote.builder.sample.input;
 
 /**
  * Created by Olivier on 23/10/2015.
  */
-public class Payment {
+public class Trade {
 
     private static int count = 0;
 
+    private String book;
     private String counterpart;
     private double amount;
     private String currency;
+    private String underlying;
 
-    public Payment() {
+    public Trade() {
         count++;
     }
 
@@ -19,8 +21,12 @@ public class Payment {
         return count;
     }
 
-    public static void setCount(int count) {
-        Payment.count = count;
+    public String getBook() {
+        return book;
+    }
+
+    public void setBook(String book) {
+        this.book = book;
     }
 
     public String getCounterpart() {
@@ -45,5 +51,13 @@ public class Payment {
 
     public void setCurrency(String currency) {
         this.currency = currency;
+    }
+
+    public String getUnderlying() {
+        return underlying;
+    }
+
+    public void setUnderlying(String underlying) {
+        this.underlying = underlying;
     }
 }

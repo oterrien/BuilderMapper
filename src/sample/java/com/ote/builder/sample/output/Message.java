@@ -1,4 +1,4 @@
-package com.ote.util.output;
+package com.ote.builder.sample.output;
 
 /**
  * Created by Olivier on 23/10/2015.

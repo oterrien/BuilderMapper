@@ -1,9 +1,9 @@
-package com.ote.util.builder.mapper.trade;
+package com.ote.builder.sample.builder.mapper.trade;
 
+import com.ote.builder.sample.builder.mapper.IEventMapper;
+import com.ote.builder.sample.input.Trade;
 import com.ote.builder.util.IMapper;
 import com.ote.builder.util.Mapper;
-import com.ote.util.builder.mapper.IEventMapper;
-import com.ote.util.input.Trade;
 
 import java.text.MessageFormat;
 

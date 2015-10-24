@@ -1,11 +1,11 @@
-package com.ote.util.builder.mapper.payment;
+package com.ote.builder.sample.builder.mapper.payment;
 
-import com.ote.util.builder.EventBuilder;
+import com.ote.builder.sample.builder.EventBuilder;
+import com.ote.builder.sample.input.Payment;
+import com.ote.builder.sample.builder.mapper.IMessageMapper;
 import com.ote.builder.util.IMapper;
 import com.ote.builder.util.Mapper;
-import com.ote.util.builder.mapper.IMessageMapper;
-import com.ote.util.input.Payment;
-import com.ote.util.output.Event;
+import com.ote.builder.sample.output.Event;
 
 /**
  * Created by Olivier on 23/10/2015.

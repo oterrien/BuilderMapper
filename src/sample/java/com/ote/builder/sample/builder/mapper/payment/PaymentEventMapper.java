@@ -1,9 +1,9 @@
-package com.ote.util.builder.mapper.payment;
+package com.ote.builder.sample.builder.mapper.payment;
 
 import com.ote.builder.util.IMapper;
 import com.ote.builder.util.Mapper;
-import com.ote.util.builder.mapper.IEventMapper;
-import com.ote.util.input.Payment;
+import com.ote.builder.sample.builder.mapper.IEventMapper;
+import com.ote.builder.sample.input.Payment;
 
 import java.text.MessageFormat;
 

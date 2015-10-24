@@ -1,11 +1,11 @@
-package com.ote.util;
+package com.ote.builder.sample;
 
-import com.ote.util.builder.MessageBuilder;
-import com.ote.util.builder.mapper.payment.PaymentMessageMapper;
-import com.ote.util.builder.mapper.trade.TradeMessageMapper;
-import com.ote.util.input.Payment;
-import com.ote.util.input.Trade;
-import com.ote.util.output.Message;
+import com.ote.builder.sample.builder.MessageBuilder;
+import com.ote.builder.sample.output.Message;
+import com.ote.builder.sample.builder.mapper.payment.PaymentMessageMapper;
+import com.ote.builder.sample.builder.mapper.trade.TradeMessageMapper;
+import com.ote.builder.sample.input.Payment;
+import com.ote.builder.sample.input.Trade;
 
 /**
  * Created by Olivier on 23/10/2015.

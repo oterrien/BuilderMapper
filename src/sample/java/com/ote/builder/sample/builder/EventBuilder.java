@@ -1,8 +1,8 @@
-package com.ote.util.builder;
+package com.ote.builder.sample.builder;
 
-import com.ote.util.builder.mapper.IEventMapper;
-import com.ote.util.output.Event;
 import com.ote.builder.util.Builder;
+import com.ote.builder.sample.builder.mapper.IEventMapper;
+import com.ote.builder.sample.output.Event;
 
 /**
  * Created by Olivier on 23/10/2015.
