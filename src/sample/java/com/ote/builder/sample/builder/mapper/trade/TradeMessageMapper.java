@@ -13,7 +13,7 @@ import com.ote.builder.util.Mapper;
 public class TradeMessageMapper extends Mapper<TradeMessageMapper.Context> implements IMessageMapper {
 
     public int getId() {
-        return getContext().count();
+        return get().count();
     }
 
     private EventBuilder eventBuilder = null;
@@ -25,7 +25,7 @@ public class TradeMessageMapper extends Mapper<TradeMessageMapper.Context> imple
         }
 
         TradeEventMapper.Context context = new TradeEventMapper.Context();
-        context.setTrade(getContext().getTrade());
+        context.setTrade(get().getTrade());
         return eventBuilder.build(context);
     }
 

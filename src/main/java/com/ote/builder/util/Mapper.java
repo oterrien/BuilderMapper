@@ -8,12 +8,12 @@ public class Mapper<TC extends IMapper.Context> implements IMapper {
     private TC context;
 
     @Override
-    public final TC getContext() {
+    public final TC get() {
         return this.context;
     }
 
     @Override
-    public final void setContext(IMapper.Context context) {
+    public final void set(IMapper.Context context) {
         this.context = (TC) context;
     }
 }

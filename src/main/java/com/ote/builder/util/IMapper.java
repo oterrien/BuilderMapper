@@ -1,13 +1,14 @@
 package com.ote.builder.util;
 
+import java.util.function.Supplier;
+
 /**
  * Created by Olivier on 23/10/2015.
  */
-public interface IMapper {
+public interface IMapper extends Supplier<IMapper.Context> {
 
-    IMapper.Context getContext();
+    void set(IMapper.Context context);
 
-    void setContext(IMapper.Context context);
-
-    interface Context{}
+    interface Context {
+    }
 }
