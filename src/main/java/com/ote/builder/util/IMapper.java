@@ -5,9 +5,11 @@ import java.util.function.Supplier;
 /**
  * Created by Olivier on 23/10/2015.
  */
-public interface IMapper extends Supplier<IMapper.Context> {
+public interface IMapper {
 
-    void set(IMapper.Context context);
+    IMapper.Context getContext();
+
+    void setContext(IMapper.Context context);
 
     interface Context {
     }
