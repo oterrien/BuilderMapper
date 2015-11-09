@@ -13,7 +13,7 @@ import com.ote.builder.sample.output.Event;
 public class PaymentMessageMapper extends Mapper<PaymentMessageMapper.Context> implements IMessageMapper {
 
     public int getId() {
-        return get().count();
+        return getContext().count();
     }
 
     private EventBuilder eventBuilder = null;
@@ -25,7 +25,7 @@ public class PaymentMessageMapper extends Mapper<PaymentMessageMapper.Context> i
         }
 
         PaymentEventMapper.Context context = new PaymentEventMapper.Context();
-        context.setPayment(get().getPayment());
+        context.setPayment(getContext().getPayment());
         return eventBuilder.build(context);
     }
 
