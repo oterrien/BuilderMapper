@@ -4,5 +4,9 @@ Feature: test
   I want
 
 Scenario: my first scenario
-Given a test
-Then the test is good
+    Given a test
+    Then the test is good
+
+Scenario: my second scenario
+    Given a test
+    Then the test is good
