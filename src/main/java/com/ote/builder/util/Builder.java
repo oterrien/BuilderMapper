@@ -22,6 +22,12 @@ public abstract class Builder<TO, TM extends IMapper> implements IBuilder<TO, TM
         return obj;
     }
 
+    /**
+     * Populate obj with mapper and use context
+     *
+     * @param obj
+     * @param context
+     */
     public final void populate(TO obj, IMapper.Context context) {
         mapper.setContext(context);
         populate(obj, mapper);
