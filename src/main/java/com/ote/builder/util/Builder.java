@@ -11,10 +11,20 @@ public abstract class Builder<TO, TM extends IMapper> implements IBuilder<TO, TM
         this.mapper = mapper;
     }
 
+    /**
+     * Get the mapper
+     *
+     * @return the mapper
+     */
     public final TM getMapper() {
         return mapper;
     }
 
+    /**
+     * Create an object with the given content (by using the mapper)
+     * @param context
+     * @return
+     */
     public final TO build(IMapper.Context context) {
 
         TO obj = create();
@@ -22,6 +32,12 @@ public abstract class Builder<TO, TM extends IMapper> implements IBuilder<TO, TM
         return obj;
     }
 
+    /**
+     * Populate object with mapper and use context
+     *
+     * @param obj
+     * @param context
+     */
     public final void populate(TO obj, IMapper.Context context) {
         mapper.setContext(context);
         populate(obj, mapper);
